@@ -38,7 +38,7 @@ MySQL | MongoDB
 
 🎨 Design & Collaboration Tools
 
-Figma | Adobe XD | VS Code | Git
+VS Code | Git
 
 
 
