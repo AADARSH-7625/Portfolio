@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <style>
+    /* Global Styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #1c1c1c 30%, #333);
+      color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    /* Contact Page Container */
+    .contact-page {
+      width: 100%;
+      max-width: 900px;
+      background-color: rgba(50, 50, 50, 0.9);
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+      text-align: center;
+    }
+
+    /* Header */
+    .contact-header h1 {
+      font-size: 2.8em;
+      color: #00bcd4;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+
+    .contact-header p {
+      font-size: 1.1em;
+      color: #c1c1c1;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    /* Contact Details */
+    .contact-details {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 40px;
+      gap: 20px;
+    }
+
+    .detail-item {
+      text-align: center;
+      color: #00bcd4;
+    }
+
+    .detail-item i {
+      font-size: 1.5em;
+      margin-bottom: 8px;
+      color: #ff5722;
+    }
+
+    .detail-item p {
+      color: #c1c1c1;
+      font-size: 1.1em;
+      margin-top: 5px;
+    }
+
+    /* Contact Form Container */
+    .contact-container {
+      padding: 20px;
+    }
+
+    /* Contact Form */
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+    .form-group {
+      width: 100%;
+      position: relative;
+    }
+
+    .form-group label {
+      position: absolute;
+      top: 50%;
+      left: 16px;
+      transform: translateY(-50%);
+      font-size: 1em;
+      color: #999;
+      transition: 0.3s;
+      pointer-events: none;
+    }
+
+    /* Input Styles */
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 16px;
+      font-size: 1em;
+      background-color: #222;
+      color: #f2f2f2;
+      border: 2px solid #555;
+      border-radius: 8px;
+      outline: none;
+      transition: border 0.3s, box-shadow 0.3s;
+    }
+
+    /* Floating Label Effect */
+    .contact-form input:focus ~ label,
+    .contact-form input:valid ~ label,
+    .contact-form textarea:focus ~ label,
+    .contact-form textarea:valid ~ label {
+      top: -8px;
+      left: 14px;
+      font-size: 0.85em;
+      color: #00bcd4;
+      background-color: #333;
+      padding: 0 4px;
+      border-radius: 4px;
+    }
+
+    /* Focused Input Styles */
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border-color: #00bcd4;
+      box-shadow: 0 4px 12px rgba(0, 188, 212, 0.4);
+    }
+
+    /* Button Styles */
+    .contact-form button {
+      width: 100%;
+      padding: 15px;
+      background: linear-gradient(135deg, #00bcd4, #0097a7);
+      color: #fff;
+      font-size: 1.2em;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .contact-form button:hover {
+      background: linear-gradient(135deg, #0097a7, #00bcd4);
+      transform: scale(1.05);
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .contact-details {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<div class="contact-page">
+  <!-- Header -->
+  <div class="contact-header">
+    <h1>Contact Me</h1>
+    <p>Reach out for collaborations, freelance projects, or just to connect. I'd love to hear from you!</p>
+  </div>
+
+  <!-- Contact Details -->
+  <div class="contact-details">
+    <div class="detail-item">
+      <i class="fas fa-phone-alt"></i>
+      <p>+1 (234) 567-890</p>
+    </div>
+    <div class="detail-item">
+      <i class="fas fa-envelope"></i>
+      <p>youremail@example.com</p>
+    </div>
+    <div class="detail-item">
+      <i class="fas fa-map-marker-alt"></i>
+      <p>Your City, Country</p>
+    </div>
+  </div>
+
+  <!-- Contact Form -->
+  <div class="contact-container">
+    <form class="contact-form">
+      <div class="form-group">
+        <input type="text" id="name" name="name" required>
+        <label for="name"><i class="fas fa-user"></i> Your Name</label>
+      </div>
+
+      <div class="form-group">
+        <input type="email" id="email" name="email" required>
+        <label for="email"><i class="fas fa-envelope"></i> Your Email</label>
+      </div>
+
+      <div class="form-group">
+        <input type="text" id="subject" name="subject" required>
+        <label for="subject"><i class="fas fa-tag"></i> Subject</label>
+      </div>
+
+      <div class="form-group">
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <label for="message"><i class="fas fa-comment"></i> Message</label>
+      </div>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>

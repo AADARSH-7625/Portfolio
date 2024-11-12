@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        /* General Styling */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #111;
+            color: #ddd;
+            scroll-behavior: smooth;
+        }
+
+        /* Hero Section */
+        #about-hero {
+            background: #0e0e0e;
+            color: #fff;
+            padding: 60px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .hero-content {
+            display: flex;
+            gap: 30px;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #00bcd4;
+        }
+
+        .hero-text {
+            max-width: 600px;
+        }
+
+        .hero-text h1 {
+            font-size: 2.5em;
+            color: #00bcd4;
+        }
+
+        .hero-text p {
+            font-size: 1.2em;
+            color: #ccc;
+            margin-bottom: 25px;
+            margin-top: 10px;
+        }
+
+        .cta-button {
+            padding: 12px 25px;
+            background-color: #00bcd4;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #0097a7;
+        }
+
+        /* Section: About Me and Skills */
+        #about-skills {
+            background-color: #1c1c1c;
+            padding: 50px 20px;
+            margin-top: 30px;
+        }
+
+        #about-skills h2 {
+            color: #00bcd4;
+            margin-bottom: 20px;
+        }
+
+        #about-skills p {
+            line-height: 25px;
+            color: #ccc;
+            margin-bottom: 30px;
+        }
+
+        .skills {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .skill-item {
+            background-color: #333;
+            color: #ccc;
+            padding: 15px 25px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .skill-item:hover {
+            background-color: #00bcd4;
+            color: #fff;
+        }
+
+        /* Section: Experience Timeline */
+        #experience {
+            background-color: #222;
+            padding: 50px 20px;
+        }
+
+        #experience h2 {
+            color: #00bcd4;
+            margin-bottom: 20px;
+        }
+
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .timeline-item {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .timeline-item h3 {
+            color: #00bcd4;
+            font-size: 1.3em;
+
+        }
+
+        .timeline-item span {
+            color: #aaa;
+            font-size: 1em;
+            margin-bottom: 10px;
+            line-height: 30px;
+        }
+
+        .timeline-item p {
+            color: #ccc;
+            font-size: 1em;
+            margin-top: 10px;
+        }
+
+        /* Section: Personal Insights */
+        #personal-insights {
+            background-color: #1c1c1c;
+            padding: 50px 20px;
+        }
+
+        #personal-insights h2 {
+            color: #00bcd4;
+            margin-bottom: 20px;
+        }
+
+        #personal-insights p {
+            color: #ccc;
+            margin-bottom: 30px;
+        }
+
+        .hobbies {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .hobby-item {
+            background-color: #333;
+            color: #ccc;
+            padding: 12px 25px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .hobby-item:hover {
+            background-color: #00bcd4;
+            color: #fff;
+        }
+
+        /* Section: Social Links and Contact */
+        #social-contact {
+            background-color: #222;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        #social-contact h2 {
+            color: #00bcd4;
+            margin-bottom: 20px;
+        }
+
+        #social-contact p {
+            color: #ccc;
+            margin-bottom: 30px;
+        }
+
+        .social-links a {
+            color: #00bcd4;
+            margin: 0 15px;
+            font-size: 1.2em;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #0097a7;
+        }
+
+        .contact-button {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #00bcd4;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s;
+            margin-top: 23px;
+        }
+
+        .contact-button:hover {
+            background-color: #0097a7;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Hero Section with Intro -->
+    <section id="about-hero">
+        <div class="container">
+            <div class="hero-content">
+                <img src="../Img/favicon-logo-circle.png" alt="Profile Photo" class="profile-img">
+                <div class="hero-text">
+                    <h1>Hi, I'm Aadarsh..</h1>
+                    <p>Building beautiful, functional websites with passion and precision.</p>
+                    <a href="#contact" class="cta-button">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: About Me and Skills -->
+    <section id="about-skills">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I'm a passionate web developer dedicated to creating responsive, user-focused applications that bring ideas
+                to life on the web. With expertise across both front-end and back-end technologies, I strive to build
+                efficient, modern, and visually engaging solutions. I’m constantly learning and embracing new tools, ensuring
+                my work reflects the latest industry standards and trends. Collaboration and open communication are central to
+                my approach, allowing me to exceed project expectations and deliver high-quality results. Every project is an
+                opportunity to innovate, solve problems, and refine my craft, making a meaningful impact in the digital space.</p>
+            <div class="skills">
+                <div class="skill-item">HTML & CSS</div>
+                <div class="skill-item">JavaScript</div>
+                <div class="skill-item">React</div>
+                <div class="skill-item">UI/UX Design</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Experience Timeline -->
+    <section id="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Web Developer</h3>
+                    <span>2024 - Present</span>
+                    <p>Developed interactive web applications using modern JavaScript frameworks like React and Angular.
+                        Focused on performance and user experience.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Frontend Developer</h3>
+                    <span>2022 - 2024</span>
+                    <p>Worked on building responsive websites and optimizing the front end for better usability and
+                        speed. Collaborated closely with design teams.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Personal Insights -->
+    <section id="personal-insights">
+        <div class="container">
+            <h2>Personal Insights</h2>
+            <p>When I'm not coding, I enjoy exploring new places, photographing landscapes, and reading up on the latest
+                in tech and design.</p>
+            <div class="hobbies">
+                <div class="hobby-item">Photography</div>
+                <div class="hobby-item">Traveling</div>
+                <div class="hobby-item">Tech Exploration</div>
+                <div class="hobby-item">Reading</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Social Links and Contact -->
+    <section id="social-contact">
+        <div class="container">
+            <h2>Let’s Connect!</h2>
+            <p>Feel free to reach out through any of my social channels or contact me directly via email. I’m open to
+                collaborations, ideas, and learning opportunities.</p>
+            <div class="social-links">
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
+                <a href="#">Twitter</a>
+            </div>
+            <a href="./Contact.html" class="contact-button">Contact Me</a>
+        </div>
+    </section>
+</body>
+
+</html>
