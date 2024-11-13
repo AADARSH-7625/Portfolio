@@ -1,4 +1,4 @@
-Hey there! 👋 I'm Aadarsh..
+                                                                      <center>**Hey there! 👋 I'm Aadarsh..**</center>
 
 Welcome to my GitHub profile! I’m a creative web developer with a knack for designing sleek, responsive websites and applications. I’m always excited about new projects, clean code, and pushing the limits of what’s possible on the web.
 
