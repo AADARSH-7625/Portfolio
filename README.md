@@ -46,9 +46,9 @@ VS Code | Git
 
 I’m always excited to connect, collaborate, and create. Let’s chat!
 
-Portfolio
+Portfolio: 
 
-LinkedIn: 
+LinkedIn: https://www.linkedin.com/in/aadarsh-v
 
 Twitter: https://x.com/AADARSHV7625
 
