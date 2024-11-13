@@ -52,6 +52,6 @@ LinkedIn: https://www.linkedin.com/in/aadarsh-v
 
 Twitter: https://x.com/AADARSHV7625
 
-Email: 
+Email: aadarshv7625@gmail.com
 
 Thanks for visiting, and feel free to check out my repositories or reach out! 😊 Happy coding!
