@@ -48,9 +48,9 @@ I’m always excited to connect, collaborate, and create. Let’s chat!
 
 Portfolio
 
-LinkedIn
+LinkedIn: 
 
-Twitter
+Twitter: https://x.com/AADARSHV7625
 
 Email: your-email@domain.com
 
